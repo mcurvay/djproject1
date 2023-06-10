@@ -1,6 +1,7 @@
-from django.shortcuts import render
+
 from django.http import HttpResponse
-from random import randint
+from django.shortcuts import render
+
 
 def home(request):
     return render(request, "page/homepage.html", {"platform": f"Araba: {randint(1, 10)}"})
