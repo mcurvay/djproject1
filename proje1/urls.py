@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from page.views import (home, contact, about, vision)
 
+from page.views import about, contact, home, vision
 
 urlpatterns = [
     path('hakkimizda.html/', about),
