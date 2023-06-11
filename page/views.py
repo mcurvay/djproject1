@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, "page/homepage.html", {"platform": f"Araba: {randint(1, 10)}"})
+    context=dict()
+    return render(request, "page/homepage.html", context)
 
 def about(request):
     context=dict ()
