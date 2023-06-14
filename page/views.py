@@ -18,3 +18,7 @@ def contact(request):
 def vision(request):
     context=dict ()
     return render(request, "page/vizyonumuz.html",context)
+
+def adver(request):
+    context=dict ()
+    return render(request, "page/ilan.html",context)

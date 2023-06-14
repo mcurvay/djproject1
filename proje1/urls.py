@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from page.views import about, contact, home, vision
+from page.views import about, contact, home, vision, adver
 
 urlpatterns = [
     path('hakkimizda.html/', about),
+    path('ilan.html/', adver),
     path('iletisim.html/', contact),
     path('',home,),
     path('vizyonumuz.html/', vision),
