@@ -19,10 +19,10 @@ from django.urls import path
 from page.views import about, adver, contact, home, vision
 
 urlpatterns = [
-    path('hakkimizda.html/', about),
-    path('ilan.html/', adver),
-    path('iletisim.html/', contact),
-    path('homepage.html',home,),
-    path('vizyonumuz.html/', vision),
+    path('hakkimizda.html/', about, name = 'about_us'),
+    path('ilan.html/', adver, name = 'advertorial'),
+    path('iletisim.html/', contact, name = 'about_us'),
+    path('homepage.html',home, name = 'home_1'),
+    path('vizyonumuz.html/', vision, name = 'vision'),
     path('admin/', admin.site.urls),
 ]
