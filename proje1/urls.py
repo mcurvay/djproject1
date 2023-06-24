@@ -22,7 +22,7 @@ urlpatterns = [
     path('hakkimizda.html/', about),
     path('ilan.html/', adver),
     path('iletisim.html/', contact),
-    path('',home,),
+    path('homepage.html',home,),
     path('vizyonumuz.html/', vision),
     path('admin/', admin.site.urls),
 ]
